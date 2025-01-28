@@ -202,13 +202,8 @@ script = ExtResource("1_hkoa8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_r2850")
-animation = &"run"
-frame = 8
-frame_progress = 0.813468
+animation = &"idol"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 5)
 shape = SubResource("CapsuleShape2D_h37w3")
-
-[node name="Node2D" type="Node2D" parent="."]
-position = Vector2(17, 2)

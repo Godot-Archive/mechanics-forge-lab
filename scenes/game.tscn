@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://brmfikkytrc0t"]
+[gd_scene load_steps=8 format=3 uid="uid://brmfikkytrc0t"]
 
 [ext_resource type="Texture2D" uid="uid://cv3joraajjegs" path="res://assets/Terrain/Terrain (16x16).png" id="1_vwyny"]
 [ext_resource type="PackedScene" uid="uid://barbw0nfnlw13" path="res://scenes/player.tscn" id="2_7ufr0"]
 [ext_resource type="PackedScene" uid="uid://dauoqkh8fi5cn" path="res://scenes/killzone.tscn" id="3_00rwo"]
+[ext_resource type="PackedScene" uid="uid://dbihm4vmpcp3f" path="res://scenes/gun.tscn" id="4_3oqrx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qnu6u"]
 texture = ExtResource("1_vwyny")
@@ -311,6 +312,9 @@ layer_0/tile_data = PackedInt32Array(65534, 393216, 0, 65535, 458752, 0, 0, 5242
 
 [node name="Player" parent="." instance=ExtResource("2_7ufr0")]
 position = Vector2(0, -35)
+
+[node name="Gun" parent="Player" instance=ExtResource("4_3oqrx")]
+position = Vector2(8, 9)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(-2, 5)
